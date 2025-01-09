@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000; // Use environment variable for port
 
 // Middleware
 app.use(cors({
-  origin: ["https://jasoos.onrender.com","https://www.jasoosesports.com"], // Replace with your frontend domain
+  origin: ["https://jasoos.onrender.com","https://www.jasoosesports.com","https://jasoos-hvoz.onrender.com"], // Replace with your frontend domain
   methods: ["GET", "POST", "DELETE"], // Allowed methods
 }));
 app.use(bodyParser.json());
