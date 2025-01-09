@@ -57,7 +57,7 @@ const Images = () => {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const response = await axios.get("https://jasoosbackend.onrender.com/images-with-descriptions");
+        const response = await axios.get("https://jasoosbackend-ofxe.onrender.com/images-with-descriptions");
         console.log(response.data);
         setImages(response.data);
       } catch (error) {

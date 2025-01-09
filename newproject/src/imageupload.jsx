@@ -80,7 +80,7 @@ const ImageUploadAndDisplay = () => {
 
   const fetchImages = async () => {
     try {
-      const response = await axios.get("https://jasoosbackend.onrender.com/images-with-descriptions");
+      const response = await axios.get("https://jasoosbackend-ofxe.onrender.com/images-with-descriptions");
       setImages(response.data);
     } catch (err) {
       console.error("Error fetching images:", err);
@@ -95,7 +95,7 @@ const ImageUploadAndDisplay = () => {
   const handleImageDelete = async (id) => {
     if (window.confirm("Are you sure you want to delete this image?")) {
       try {
-        await axios.delete(`https://jasoosbackend.onrender.com/images/${id}`);
+        await axios.delete(`https://jasoosbackend-ofxe.onrender.com/images/${id}`);
         setImages((prevImages) => prevImages.filter((image) => image._id !== id));
       } catch (err) {
         console.error("Error deleting image:", err);
