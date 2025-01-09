@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", serif,
+    
+}
+
+body{
+    background-image: linear-gradient(to right, #210044 0%, #001437 100%);
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+  }
