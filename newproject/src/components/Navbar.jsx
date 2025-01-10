@@ -110,9 +110,9 @@ const Navbar = () => {
           fontWeight: '700',
           display: 'flex',
           alignItems: 'center',
-          // border:"1px solid white",
-          // borderRadius:"50%",
-          // padding:"5px",
+          border:"1px solid white",
+          borderRadius:"50%",
+          padding:"5px",
         }}
       >
         <img src={JasoosLogo} style={{ width: '30px' }} alt="Logo" />
@@ -122,11 +122,16 @@ const Navbar = () => {
         <a style={{
           textDecoration:"none",
           color:"white",
-          border:"1px solid white",
-          padding:"5px 10px 5px 10px"
+          // border:"1px solid white",
+          padding:"5px 10px 5px 10px",
+          color:"rgb(255, 255, 255)",
+          fontWeight:"400",
+          backgroundColor:"rgb(45, 74, 221)",
         }} href="footer"> <p style={{
           color:"white",
           paddingTop:"2px",
+          
+          
         }} />JOIN US</a>
         <Hamburger onClick={toggleMenu}>☰</Hamburger> {/* Hamburger Icon */}
       </MobileIcons>
@@ -206,11 +211,12 @@ const Navbar = () => {
           
             style={{
               textDecoration:"none",
-              color:"black",
+              color:"rgb(255, 255, 255)",
               fontWeight:"400",
-              backgroundColor:"rgb(0, 200, 214)",
+              backgroundColor:"rgb(45, 74, 221)",
               // border:"1px solid white",
               padding:"5px 10px 5px 10px",
+              marginBottom:"20px"
           
           }}
           onMouseEnter={(e) => (e.target.style.color = '#4a90e2')}
