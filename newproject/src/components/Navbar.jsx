@@ -124,7 +124,7 @@ const Navbar = () => {
           color:"white",
           border:"1px solid white",
           padding:"5px 10px 5px 10px"
-        }} href="#"> <p style={{
+        }} href="footer"> <p style={{
           color:"white",
           paddingTop:"2px",
         }} />JOIN US</a>
@@ -133,7 +133,7 @@ const Navbar = () => {
 
       <Othernav isOpen={isOpen}>
         <Link
-          to="home"
+          to="about"
           smooth={true}
           duration={500}
           style={{

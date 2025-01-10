@@ -137,7 +137,7 @@ function AboutUs() {
   };
   
   return (
-    <div className="divv">
+    <div className="divv" id="about">
     <motion.div
       className="mainAbout"
       id="AboutUs"
