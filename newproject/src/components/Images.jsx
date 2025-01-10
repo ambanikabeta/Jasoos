@@ -155,7 +155,7 @@ const Images = () => {
   };
 
   if (images.length === 0) {
-    return <p style={{ color: "white", fontSize: "20px" }}>Loading images...</p>;
+    return <p style={{ color: "white", fontSize: "20px" }}>Loading Tournaments...</p>;
   }
 
   return (

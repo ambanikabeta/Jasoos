@@ -13,6 +13,8 @@ const Othernav = styled.div`
   gap: 20px;
   padding-left: 80px;
   justify-content: space-between;
+  align-items: center;
+  
 
   @media (max-width: 600px) {
     flex-direction: column;
@@ -80,6 +82,7 @@ const MobileIcons = styled.div`
   align-items: center;
   gap: 10px;
 
+
   @media (max-width: 600px) {
     display: flex; /* Show the WhatsApp icon on mobile */
   }
@@ -107,6 +110,9 @@ const Navbar = () => {
           fontWeight: '700',
           display: 'flex',
           alignItems: 'center',
+          // border:"1px solid white",
+          // borderRadius:"50%",
+          // padding:"5px",
         }}
       >
         <img src={JasoosLogo} style={{ width: '30px' }} alt="Logo" />
@@ -194,14 +200,16 @@ const Navbar = () => {
           Tournaments
         </Link>
         <Link
-          to="images"
+          to="footer"
           smooth={true}
           duration={500}
           
             style={{
               textDecoration:"none",
-              color:"white",
-              border:"1px solid white",
+              color:"black",
+              fontWeight:"400",
+              backgroundColor:"rgb(0, 200, 214)",
+              // border:"1px solid white",
               padding:"5px 10px 5px 10px",
           
           }}
