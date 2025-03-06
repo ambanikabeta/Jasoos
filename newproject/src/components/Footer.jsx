@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import emailjs from 'emailjs-com';
-import DiscordLogo from '../assets/discord-white-icon.webp';
-import YoutubeLogo from '../assets/youtube-app-white-icon.webp';
+import DiscordLogo from '../assets/dc.png';
+import YoutubeLogo from '../assets/yt.png';
+import WhatsappLogo from '../assets/wa.png';
+import IgLogo from '../assets/ig.png';
+
 import JasoosLogo from '../assets/Jasoos.png';
 
 function Footer() {
@@ -109,35 +112,27 @@ function Footer() {
               alignItems: 'center',
               justifyContent: 'center',
               justifyItems: 'center',
-              paddingLeft: '10px',
+              // paddingLeft: '10px',
+              gap:"10px"
             }}
           >
-            <a href="https://discord.com/invite/AatMhrgQkc">
-              <img style={{ width: '25px' }} src={DiscordLogo} alt="" />
+            <a target='blank' href="https://discord.com/invite/AatMhrgQkc">
+              <img style={{ width: '35px' }} src={DiscordLogo} alt="" />
             </a>
-            <a
-              style={{
-                textDecoration: 'none',
-                color: 'white',
-                fontSize: '25px',
-                padding: '10px 20px 10px 20px',
-              }}
-              href="https://insta.oia.bio/Jasoos-Esports"
-              className="fa fa-instagram"
-            ></a>
-            <a href="">
-              <img style={{ width: '25px' }} src={YoutubeLogo} alt="" />
+
+
+            <a target='blank' href="https://insta.oia.bio/Jasoos-Esports">
+                <img style={{ width: '35px' }} src={IgLogo} alt="" />
+              </a>
+
+
+            <a target='blank' href="https://www.youtube.com/channel/UCpl_MU50pxeVIpdelp_ZR6g">
+              <img style={{ width: '35px' }} src={YoutubeLogo} alt="" />
             </a>
-            <a
-              style={{
-                textDecoration: 'none',
-                color: 'white',
-                fontSize: '25px',
-                padding: '10px 20px 10px 20px',
-              }}
-              href="https://whatsapp.com/channel/0029Va6oGCHCxoB2rYsdcW26"
-              className="fa fa-whatsapp"
-            ></a>
+
+
+            <a target='blank'  href="https://whatsapp.com/channel/0029Va6oGCHCxoB2rYsdcW26">
+            <img style={{ width: '35px' }} src={WhatsappLogo} alt="" /></a>
           </div>
         </div>
 
@@ -209,7 +204,8 @@ function Footer() {
             <textarea
               name="message"
               placeholder="Message"
-              rows="3"
+              rows="3"  
+              maxLength={250}
               style={{
                 padding: '10px',
                 border: 'none',
@@ -217,6 +213,7 @@ function Footer() {
                 backgroundColor: '#333333',
                 color: 'white',
                 fontFamily: 'Poppins',
+                resize: 'none',
               }}
               required
             ></textarea>

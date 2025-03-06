@@ -1,144 +1,47 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-scroll';
-import JasoosLogo from '../assets/Jasoos.png';
-import styled from 'styled-components';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWhatsapp,faInstagram } from "@fortawesome/free-brands-svg-icons";
-
-
-const Othernav = styled.div`
-  font-size: 15px;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  padding-left: 80px;
-  justify-content: space-between;
-  align-items: center;
-  
-
-  @media (max-width: 600px) {
-    flex-direction: column;
-    padding-left: 0;
-    width: 100%;
-    display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')}; /* Toggle visibility */
-    background: rgba(1, 29, 64, 0.95);
-    position: absolute;
-    top: 60px; /* Adjust this value as per your navbar height */
-    left: 0;
-    z-index: 1000; /* Make sure it's above other content */
-  }
-`;
-
-const Hamburger = styled.div`
-  display: none;
-  cursor: pointer;
-  font-size: 25px;
-
-  @media (max-width: 600px) {
-    display: block; /* Show the hamburger icon on mobile */
-  }
-`;
-
-const JoinButton = styled.button`
-  background: transparent;
-  border: 1px solid rgb(255, 255, 255);
-  color: white;
-  font-size: 13px;
-  font-weight: bold;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-  &:hover {
-    background-color: white;
-    color: black;
-  }
-
-  @media (max-width: 600px) {
-    display: none; /* Hide the button on mobile */
-  }
-`;
-
-const NavContainer = styled.nav`
-  font-family: Poppins;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: linear-gradient(87deg, rgb(10, 11, 76), rgb(0, 19, 78) 100%);
-  display: flex;
-  justify-content: space-between; /* Default spacing */
-  align-items: center;
-  color: white;
-  box-shadow: 1px 1px white;
-  padding: 10px 20px;
-
-  @media (max-width: 600px) {
-    padding: 10px 20px; /* Adjust padding for mobile view */
-  }
-`;
-
-const MobileIcons = styled.div`
-  display: none;
-  align-items: center;
-  gap: 10px;
-
-
-  @media (max-width: 600px) {
-    display: flex; /* Show the WhatsApp icon on mobile */
-  }
-
-  .whatsapp-icon {
-    color: #25d366;
-    font-size: 25px;
-    cursor: pointer;
-  }
-`;
+import JasoosLogo from '../assets/Jasoos.png'
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false); // State to manage the toggle
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen); // Toggle the menu open/close
-  };
-
   return (
-    <NavContainer>
+    <nav
+      style={{
+        fontFamily: "Poppins",
+        // marginTop: "10px",
+        position: 'sticky',
+        top: '0',
+        zIndex: '1000',
+        background: "linear-gradient(87deg, rgb(12, 100, 184) 0%, rgb(1, 29, 64) 100%)",
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        color: "white",
+        padding: "10px 20px",
+        // boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", 
+      }}
+    >
       <div
         className="logo"
         style={{
-          fontSize: '20px',
-          fontWeight: '700',
-          display: 'flex',
-          alignItems: 'center',
-          border:"1px solid white",
-          borderRadius:"50%",
-          padding:"5px",
+          fontSize: "20px",
+          fontWeight: "700",
         }}
       >
-        <img src={JasoosLogo} style={{ width: '30px' }} alt="Logo" />
+        <img src={JasoosLogo} style={{
+          width:"30px"
+        }}/>
       </div>
-
-      <MobileIcons>
-        <a style={{
-          textDecoration:"none",
-          color:"white",
-          // border:"1px solid white",
-          padding:"5px 10px 5px 10px",
-          color:"rgb(255, 255, 255)",
-          fontWeight:"400",
-          backgroundColor:"rgb(45, 74, 221)",
-        }} href="footer"> <p style={{
-          color:"white",
-          paddingTop:"2px",
-          
-          
-        }} />JOIN US</a>
-        <Hamburger onClick={toggleMenu}>☰</Hamburger> {/* Hamburger Icon */}
-      </MobileIcons>
-
-      <Othernav isOpen={isOpen}>
+      <div
+        className="othernav"
+        style={{
+          fontSize: "15px",
+          display: "flex",
+          gap: "20px",
+          paddingLeft: "80px",
+        }}
+      >
         <Link
-          to="about"
+          to="home"
           smooth={true}
           duration={500}
           style={{
@@ -154,7 +57,7 @@ const Navbar = () => {
           Home
         </Link>
 
-        {/* <Link
+        <Link
           to="AboutUs"
           smooth={true}
           duration={500}
@@ -169,8 +72,10 @@ const Navbar = () => {
           onMouseLeave={(e) => (e.target.style.color = 'white')}
         >
           About Us
-        </Link> */}
+        </Link>
 
+
+        
         <Link
           to="services"
           smooth={true}
@@ -188,6 +93,8 @@ const Navbar = () => {
           Services
         </Link>
 
+        
+
         <Link
           to="images"
           smooth={true}
@@ -204,28 +111,74 @@ const Navbar = () => {
         >
           Tournaments
         </Link>
-        <Link
-          to="footer"
-          smooth={true}
-          duration={500}
-          
-            style={{
-              textDecoration:"none",
-              color:"rgb(255, 255, 255)",
-              fontWeight:"400",
-              backgroundColor:"rgb(45, 74, 221)",
-              // border:"1px solid white",
-              padding:"5px 10px 5px 10px",
-              marginBottom:"20px"
-          
+
+
+      </div>
+      
+      {/* JOIN US! Button */}
+      <Link
+        to="footer"
+        smooth={true}
+        duration={500}
+        style={{
+          fontWeight: '400',
+          color: 'white',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          transition: 'color 0.3s',
+        }}
+      >
+        <button
+          style={{
+            background: "transparent",
+            border: "1px solid rgb(255, 255, 255)",
+            color: "white",
+            fontSize: "13px",
+            fontWeight: "bold",
+            padding: "10px 20px",
+            cursor: "pointer",
+            transition: "all 0.3s ease",
           }}
-          onMouseEnter={(e) => (e.target.style.color = '#4a90e2')}
-          onMouseLeave={(e) => (e.target.style.color = 'white')}
+          onMouseEnter={(e) => {
+            e.target.style.backgroundColor = "white";
+            e.target.style.color = "black";
+          }}
+          onMouseLeave={(e) => {
+            e.target.style.backgroundColor = "transparent";
+            e.target.style.color = "#4a90e2";
+          }}
         >
           JOIN US!
-        </Link>
-      </Othernav>
-    </NavContainer>
+        </button>
+      </Link>
+      <style>
+      {`
+          @media (max-width: 768px) {
+            .hamburger {
+              display: none;
+            }
+
+            .nav-links {
+              display: flex !important;
+              flex-direction: row;
+              position: static;
+              background: none;
+              padding: 0;
+            }
+          }
+
+          @media (max-width: 768px) {
+            .hamburger {
+              display: block;
+            }
+
+            .nav-links.open {
+              display: flex !important;
+            }
+          }
+        `}
+      </style>
+    </nav>
   );
 };
 

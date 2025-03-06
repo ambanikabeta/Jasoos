@@ -6,7 +6,7 @@ import balram from "../assets/balram.png";
 import Clients from "./Clients";
 import Services from "./Services";
 import styled from "styled-components";
-import JasoosImg from "../assets/Jasoos.png";
+import JasoosImg from "../assets/jasoos esports logo (4).png";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import DiscordLogo from "../assets/discord-white-icon.webp";
@@ -170,7 +170,7 @@ function AboutUs() {
       >
         <motion.img
           style={{
-            width: "20rem",
+            width: "25rem",
             paddingTop:"30px"
           }}
           src={JasoosImg}
