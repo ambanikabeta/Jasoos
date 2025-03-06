@@ -5,7 +5,7 @@ import YoutubeLogo from '../assets/yt.png';
 import WhatsappLogo from '../assets/wa.png';
 import IgLogo from '../assets/ig.png';
 
-import JasoosLogo from '../assets/Jasoos.png';
+import JasoosLogo from '../assets/jasoos esports logo (4).png';
 
 function Footer() {
   const [isMobile, setIsMobile] = useState(false);
@@ -62,7 +62,7 @@ function Footer() {
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'center', // Center items within the container
-          alignItems: 'flex-start',
+          alignItems: 'center',
           gap: '50px',
           maxWidth: '1200px', // Limit content width for large screens
           width: '100%',
@@ -79,7 +79,7 @@ function Footer() {
             alignItems: 'center',
           }}
         >
-          <img style={{ width: '50px' }} src={JasoosLogo} alt="" />
+          <img style={{ width: '240px',marginBottom:"20px" }} src={JasoosLogo} alt="" />
 
           <a
             style={{

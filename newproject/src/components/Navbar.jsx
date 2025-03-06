@@ -28,7 +28,7 @@ const Navbar = () => {
         }}
       >
         <img src={JasoosLogo} style={{
-          width:"30px"
+          width:"120px"
         }}/>
       </div>
       <div
