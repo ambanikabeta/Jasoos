@@ -103,19 +103,8 @@ const Navbar = () => {
 
   return (
     <NavContainer>
-      <div
-        className="logo"
-        style={{
-          fontSize: '20px',
-          fontWeight: '700',
-          display: 'flex',
-          alignItems: 'center',
-          border:"1px solid white",
-          borderRadius:"50%",
-          padding:"5px",
-        }}
-      >
-        <img src={JasoosLogo} style={{ width: '30px' }} alt="Logo" />
+      <div>
+        <img src={JasoosLogo} style={{ width: '150px' }} alt="Logo" />
       </div>
 
       <MobileIcons>
