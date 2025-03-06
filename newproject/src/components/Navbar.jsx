@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import JasoosLogo from '../assets/Jasoos.png'
+import JasoosLogo from '../assets/jasoos esports logo (4).png'
 
 const Navbar = () => {
   return (
@@ -131,6 +131,7 @@ const Navbar = () => {
         <button
           style={{
             background: "transparent",
+            backgroundColor:"rgb(0, 114, 237)",
             border: "1px solid rgb(255, 255, 255)",
             color: "white",
             fontSize: "13px",
