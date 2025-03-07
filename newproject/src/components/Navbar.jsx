@@ -205,7 +205,7 @@ const Navbar = () => {
               backgroundColor:"rgb(45, 74, 221)",
               // border:"1px solid white",
               padding:"5px 10px 5px 10px",
-              marginBottom:"20px"
+              // marginBottom:"20px"
           
           }}
           onMouseEnter={(e) => (e.target.style.color = '#4a90e2')}
