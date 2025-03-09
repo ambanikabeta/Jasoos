@@ -116,7 +116,7 @@ const Navbar = () => {
           color:"rgb(255, 255, 255)",
           fontWeight:"400",
           backgroundColor:"rgb(45, 74, 221)",
-        }} href="footer"> <p style={{
+        }} href="https://forms.gle/Xotf8Rsk3djsmsKCA" target='blank'> <p style={{
           color:"white",
           paddingTop:"2px",
           
@@ -193,26 +193,26 @@ const Navbar = () => {
         >
           Tournaments
         </Link>
-        <Link
-          to="footer"
-          smooth={true}
-          duration={500}
-          
-            style={{
-              textDecoration:"none",
-              color:"rgb(255, 255, 255)",
-              fontWeight:"400",
-              backgroundColor:"rgb(45, 74, 221)",
-              // border:"1px solid white",
-              padding:"5px 10px 5px 10px",
-              // marginBottom:"20px"
-          
-          }}
-          onMouseEnter={(e) => (e.target.style.color = '#4a90e2')}
-          onMouseLeave={(e) => (e.target.style.color = 'white')}
-        >
-          JOIN US!
-        </Link>
+        <a
+  href="https://forms.gle/Xotf8Rsk3djsmsKCA"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    textDecoration: "none",
+    color: "rgb(255, 255, 255)",
+    fontWeight: "400",
+    backgroundColor: "rgb(45, 74, 221)",
+    cursor: "pointer",
+    padding: "5px 10px",
+    display: "inline-block",
+    margin:"0px 0px 10px 0px"
+  }}
+  onMouseEnter={(e) => (e.target.style.color = "#4a90e2")}
+  onMouseLeave={(e) => (e.target.style.color = "white")}
+>
+  JOIN US!
+</a>
+
       </Othernav>
     </NavContainer>
   );
