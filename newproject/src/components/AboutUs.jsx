@@ -228,15 +228,16 @@ function AboutUs() {
               border:"1px solid white",
               padding:"3px 5px 3px 5px",
               borderRadius:"5px",
-              }} href="/">JOIN GROUP</a>
+              }} href="https://whatsapp.com/channel/0029Va6oGCHCxoB2rYsdcW2">JOIN GROUP</a>
         </div>
+
         <div>
         <img style={{width:"35px"}} src={YoutubeLogo} alt="" />
           <p>YouTube Subscribers</p>
           <p  style={{
             marginBottom:"9px"
           }} className="count">
-            {inView && <CountUp start={0} end={8500} duration={2} separator="," />}+
+            {inView && <CountUp start={0} end={10000} duration={2} separator="," />}+
           </p>
           <a style={{
               textDecoration:"none",
@@ -245,15 +246,16 @@ function AboutUs() {
               padding:"3px 5px 3px 5px",
               background: "linear-gradient(to right, rgb(216, 11, 11), rgb(255, 0, 0))",
               borderRadius:"5px",
-              }} href="/">SUBSCRIBE</a>
+              }} href="https://www.youtube.com/channel/UCpl_MU50pxeVIpdelp_ZR6g">SUBSCRIBE</a>
         </div>
+
         <div>
         <p style={{color:"white", fontSize:"35px", paddingBottom:"5px"}} href="#" class="fa fa-instagram"></p>
           <p>Instagram Followers</p>
           <p style={{
             marginBottom:"9px"
           }} className="count">
-            {inView && <CountUp start={0} end={1000} duration={2} separator="," />}+
+            {inView && <CountUp start={0} end={5000} duration={2} separator="," />}+
           </p>
           <a style={{
               textDecoration:"none",
@@ -262,15 +264,16 @@ function AboutUs() {
               padding:"3px 5px 3px 5px",
               background: "linear-gradient(to right, rgb(255, 0, 157), rgb(255, 166, 0))",
               borderRadius:"5px",
-              }} href="https://discord.com/invite/AatMhrgQkc">FOLLOW US</a>
+              }} href="https://insta.oia.bio/Jasoos-Esports">FOLLOW US</a>
         </div>
+
         <div>
         <img style={{width:"35px"}} src={DiscordLogo} alt="" />
           <p>Discord Followers</p>
           <p style={{
             marginBottom:"9px"
           }} className="count">
-            {inView && <CountUp start={0} end={14000} duration={2} separator="," />}+
+            {inView && <CountUp start={0} end={20000} duration={2} separator="," />}+
           </p>
           <a style={{
               textDecoration:"none",

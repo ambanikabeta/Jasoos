@@ -25,13 +25,16 @@ function Footer() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+  
+    const confirmSubmission = window.confirm("Are you sure you want to submit the form?");
+    if (!confirmSubmission) return; // Stop submission if the user cancels
+  
     emailjs
       .sendForm(
-        'service_l7sshqo', // Replace with your EmailJS service ID
-        'template_djov4jj', // Replace with your EmailJS template ID
+        'service_ph5b91a', // Replace with your EmailJS service ID
+        'template_ykzue0y', // Replace with your EmailJS template ID
         e.target,
-        'Pz0HoiX6BROfdO--t' // Replace with your EmailJS public key
+        'KWuenM9PrB6Svug1E' // Replace with your EmailJS public key
       )
       .then(
         (result) => {
@@ -41,9 +44,10 @@ function Footer() {
           alert('Failed to send the message, please try again.');
         }
       );
-
+  
     e.target.reset(); // Reset the form fields
   };
+  
 
   return (
     <footer

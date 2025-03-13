@@ -59,7 +59,7 @@ const AdminLogin = ({ onLogin }) => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (username === "admin" && password === "admin") {
+    if (username === "jasoos@balram0011" && password === "balram@jagga1100FF") {
       onLogin(true);
     } else {
       alert("Invalid credentials. Please try again.");
