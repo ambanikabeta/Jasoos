@@ -59,12 +59,15 @@ const AdminLogin = ({ onLogin }) => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (username === "jasoos@balram0011" && password === "balram@jagga1100FF") {
+  
+  
+    if (username.trim() === "jasoos@balram0011" && password.trim() === "balram@jagga1100FF") {
       onLogin(true);
     } else {
       alert("Invalid credentials. Please try again.");
     }
   };
+  
 
   return (
     <Container>

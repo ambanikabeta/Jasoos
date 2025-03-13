@@ -90,7 +90,7 @@ const UploadPage = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (loginCredentials.id === "admin" && loginCredentials.password === "admin") {
+    if (loginCredentials.id === "jasoos@balram0011" && loginCredentials.password === "balram@jagga1100FF") {
       setIsLoggedIn(true);
     } else {
       alert("Invalid ID or password. Please try again.");
