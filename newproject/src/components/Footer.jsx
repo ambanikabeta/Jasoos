@@ -29,11 +29,18 @@ function Footer() {
     const confirmSubmission = window.confirm("Are you sure you want to submit the form?");
     if (!confirmSubmission) return; // Stop submission if the user cancels
   
+    const formData = {
+      name: e.target.name.value,
+      phone: e.target.phone.value, // Ensure phone number is included
+      email: e.target.email.value,
+      message: e.target.message.value,
+    };
+  
     emailjs
-      .sendForm(
+      .send(
         'service_ph5b91a', // Replace with your EmailJS service ID
         'template_ykzue0y', // Replace with your EmailJS template ID
-        e.target,
+        formData, // Send form data properly
         'KWuenM9PrB6Svug1E' // Replace with your EmailJS public key
       )
       .then(
@@ -45,8 +52,9 @@ function Footer() {
         }
       );
   
-    e.target.reset(); // Reset the form fields
+    e.target.reset(); // Reset form after submission
   };
+  
   
 
   return (
